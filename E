@@ -1,0 +1,7 @@
+from itertools import combinations
+
+# Gerar as 10 primeiras combinações de 6 números para a Mega Sena
+comb = combinations(range(1, 61), 6)
+primeiras_10_combinacoes = [next(comb) for _ in range(10)]
+
+print(primeiras_10_combinacoes)
